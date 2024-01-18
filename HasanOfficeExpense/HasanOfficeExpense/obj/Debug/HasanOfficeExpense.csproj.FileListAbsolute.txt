@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\HasanOfficeExpense\HasanOfficeExpense\bin\Debug\HasanOfficeExpense.exe.config
+C:\Users\User\Desktop\HasanOfficeExpense\HasanOfficeExpense\bin\Debug\HasanOfficeExpense.exe
+C:\Users\User\Desktop\HasanOfficeExpense\HasanOfficeExpense\bin\Debug\HasanOfficeExpense.pdb
+C:\Users\User\Desktop\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.exe
+C:\Users\User\Desktop\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.pdb
+C:\Users\User\Desktop\Нова папка\HasanOfficeExpense\HasanOfficeExpense\bin\Debug\HasanOfficeExpense.exe.config
+C:\Users\User\Desktop\Нова папка\HasanOfficeExpense\HasanOfficeExpense\bin\Debug\HasanOfficeExpense.exe
+C:\Users\User\Desktop\Нова папка\HasanOfficeExpense\HasanOfficeExpense\bin\Debug\HasanOfficeExpense.pdb
+C:\Users\User\Desktop\Нова папка\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Нова папка\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Нова папка\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.exe
+C:\Users\User\Desktop\Нова папка\HasanOfficeExpense\HasanOfficeExpense\obj\Debug\HasanOfficeExpense.pdb
