@@ -9,7 +9,7 @@ using ClassExpense;
 
 namespace HasanOfficeExpense
 {
-    public class Expense
+    internal class Expense
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }

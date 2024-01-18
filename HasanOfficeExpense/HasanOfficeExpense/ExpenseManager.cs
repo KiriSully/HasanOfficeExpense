@@ -9,7 +9,7 @@ namespace HasanOfficeExpense
 {
     public class ExpenseManager
     {
-        private static void SaveExpensesToFile(List<ClassExpense.Expense> expenses)
+        internal static void SaveExpensesToFile(List<Expense> expenses)
         {
             string filePath = Program.GetDailyExpensesFilePath();
 
@@ -28,15 +28,30 @@ namespace HasanOfficeExpense
                 }
             }
         }
-      
-        internal static void DisplayExpenses(List<Expense> matchingExpenses)
-        {
-            throw new NotImplementedException();
-        }
 
-        internal static void DisplayExpensesAdmin(List<Expense> matchingExpenses)
+        internal static void DisplayExpenses(List<ClassExpense.Expense> expenses)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("┍━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑");
+            Console.WriteLine("│   ID   │        Дата         │     Сума     │      Категорія     │            Опис витрат            │");
+            Console.WriteLine("┝━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥");
+
+            foreach (var expense in expenses)
+            {
+                Console.WriteLine($"│ {expense.Id,-6} │  {expense.Date,-17:yyyy-MM-dd HH:mm}  │ {expense.Amount,-11}  │ {expense.Category,-17}  │ {expense.Description,-33} │ ");
+                Console.WriteLine("┝━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥");
+            }
+        }
+        internal static void DisplayExpensesAdmin(List<ClassExpense.Expense> expenses)
+        {
+            Console.WriteLine("┍━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑");
+            Console.WriteLine("│   ID   │        Дата         │     Сума     │      Категорія     │            Опис витрат            │");
+            Console.WriteLine("┝━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥");
+
+            foreach (var expense in expenses)
+            {
+                Console.WriteLine($"│ {expense.Id,-6} │  {expense.Date,-17:yyyy-MM-dd HH:mm}  │ {expense.Amount,-11}  │ {expense.Category,-17}  │ {expense.Description,-33} │ ");
+                Console.WriteLine("┝━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┥");
+            }
         }
     }
 }

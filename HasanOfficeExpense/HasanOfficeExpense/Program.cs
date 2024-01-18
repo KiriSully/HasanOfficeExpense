@@ -406,14 +406,10 @@ namespace HasanOfficeExpense
 
             expenses.Add(newExpense);
             Console.WriteLine($"\nВитрати {expenseAmount} грн додано успішно!");
-            SaveExpensesToFile(expenses);
+            ExpenseManager.SaveExpensesToFile(expenses);
             Console.WriteLine("Натисніть будь-яку клавішу для повернення в меню адміністратора.");
             Console.ReadKey();
             UserMainMenu.AdminFunctionality();
-        }
-        private static void SaveExpensesToFile(List<Expense> expenses)
-        {
-            throw new NotImplementedException();
         }
 
         public static void ChooseSearchCriteria()
@@ -496,48 +492,7 @@ namespace HasanOfficeExpense
                     break;
             }
         }
-        private static void DisplaySearchResults(List<ClassExpense.Expense> matchingExpenses)
-        {
-            Console.Clear();
-            UserAuthentication.WriteUserRole(user, "User");
-            Console.WriteLine("┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑");
-            Console.WriteLine("│        Результати пошуку        │");
-            Console.WriteLine("┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙");
-
-            if (matchingExpenses.Count > 0)
-            {
-                ExpenseManager.DisplayExpenses(matchingExpenses);
-            }
-            else
-            {
-                Console.WriteLine("Немає витрат, що відповідають введеним критеріям.");
-            }
-
-            Console.WriteLine("Натисніть будь-яку клавішу для повернення в меню користувача.");
-            Console.ReadKey();
-            UserMainMenu.UserFunctionality();
-        }
-        private static void DisplaySearchResultsAdmin(List<ClassExpense.Expense> matchingExpenses)
-        {
-            Console.Clear();
-            UserAuthentication.WriteUserRole(user, "Admin");
-            Console.WriteLine("┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑");
-            Console.WriteLine("│        Результати пошуку        │");
-            Console.WriteLine("┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙");
-
-            if (matchingExpenses.Count > 0)
-            {
-                ExpenseManager.DisplayExpensesAdmin(matchingExpenses);
-            }
-            else
-            {
-                Console.WriteLine("Немає витрат, що відповідають введеним критеріям.");
-            }
-
-            Console.WriteLine("Натисніть будь-яку клавішу для повернення в меню адміністратора.");
-            Console.ReadKey();
-            UserMainMenu.AdminFunctionality();
-        }
+        
     }
 }
 
